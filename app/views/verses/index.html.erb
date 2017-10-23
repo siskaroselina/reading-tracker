@@ -1,0 +1,20 @@
+<h1>Verses List</h1>
+
+<table>
+	<thead>
+		<tr>
+			<td> ID </td>
+			<td> Content </td>
+		</tr>
+
+	</thead>
+	<tbody>
+		<% @verses.each do |verse| %> 
+		<tr>
+			<td><%= verse.id %></td>
+			<td><%= verse.content %></td>
+		</tr>
+		<% end %>
+	</tbody>
+
+</table>
